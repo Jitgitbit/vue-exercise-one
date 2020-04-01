@@ -24,6 +24,12 @@
   <h1>Vue Basics</h1>
   <div id="app">
     <h2>{{ title }}</h2>
+    <button @click='logMessage'>click me</button>
+    <button @click.alt='logMessage'>alt-click me</button>
+    <button @click.shift='logMessage'>shift-click me</button>
+    <a href="https://www.google.com" @click='logMessage'>Google</a>
+    <a href="https://www.google.com" @click.prevent='logMessage'>Google...but no</a>
+<hr>
     <p>My name is {{name}}</p>
     Key Up<input type="text" @keyup='updateName'>
     Key Press<input type="text" @keypress='updateName'>

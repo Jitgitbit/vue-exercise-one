@@ -28,6 +28,9 @@ new Vue({
     updateName(e){
       console.log(e.target.value)
       this.name = e.target.value ? e.target.value : 'Dirk'         // Three names ! hahaa            //notice keypress is always one behind keyup !!
+    },
+    logMessage(){
+      console.log(`MADE YOU CLICK...`)
     }
   }
 })
