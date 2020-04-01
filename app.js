@@ -4,7 +4,8 @@ new Vue({
     title:'Becoming a Vue Phoenix',
     name:'Thomas',
     url:'https://www.youtube.com',
-    classes:['one','two']
+    classes:['one','two'],
+    wage:10
   },
   methods: {
     greet(time){
