@@ -21,9 +21,9 @@
     <p>{{ greet('evening') }}</p>
     <p>I earn {{wage}} dollars per minute</p>
     <button v-on:dblclick='changeWage(2.5)'>Increase wage with dblclick</button>
-    <button v-on:dblclick='changeWage(-2.1)'>Decrease wage with dblclick</button>
+    <button @dblclick='changeWage(-2.1)'>Decrease wage with dblclick</button>
     <button v-on:click='wage++'>Increase wage by $1</button>
-    <button v-on:click='wage--'>Decrease wage by $1</button>
+    <button @click='wage--'>Decrease wage by $1</button>
 
 <hr>
     <a :href="url">YouTube</a>
