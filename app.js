@@ -2,7 +2,8 @@ new Vue({
   el: '#app',
   data: {
     title:'Becoming a Vue Phoenix',
-    name:'Thomas'
+    name:'Thomas',
+    url:'https://www.youtube.com'
   },
   methods: {
     greet(time){
