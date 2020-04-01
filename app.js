@@ -3,7 +3,8 @@ new Vue({
   data: {
     title:'Becoming a Vue Phoenix',
     name:'Thomas',
-    url:'https://www.youtube.com'
+    url:'https://www.youtube.com',
+    classes:['one','two']
   },
   methods: {
     greet(time){
