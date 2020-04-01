@@ -2,6 +2,8 @@ new Vue({
   el: '#app',
   data: {
     title:'Becoming a Vue Phoenix',
+    showName: false,
+    showAge: true,
     name:'Thomas',
     url:'https://www.youtube.com',
     classes:['one','two'],
@@ -31,6 +33,12 @@ new Vue({
     },
     logMessage(){
       console.log(`MADE YOU CLICK...`)
+    },
+    toggleName(){
+      this.showName = !this.showName
+    },
+    toggleAge(){
+      this.showAge = !this.showAge                                 // note the importance of sequence on the SPA, if and then else-if  !!!
     }
   }
 })
