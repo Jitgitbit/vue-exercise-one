@@ -11,6 +11,12 @@
     .two{
       text-decoration: line-through;
     }
+    .canvas{
+      margin-top: 20px;
+      background: #ddd;
+      height: 300px;
+      width: 300px;
+    }
   </style>
 </head>
 <body>
@@ -19,12 +25,14 @@
   <div id="app">
     <h2>{{ title }}</h2>
     <p>{{ greet('evening') }}</p>
+    <button @click='logEvent'>Log Event Info</button>
+    <div class="canvas" @mousemove='logCoords'>x={{coords.x}} y={{coords.y}}</div>
+<hr>
     <p>I earn {{wage}} dollars per minute</p>
     <button v-on:dblclick='changeWage(2.5)'>Increase wage with dblclick</button>
     <button @dblclick='changeWage(-2.1)'>Decrease wage with dblclick</button>
     <button v-on:click='wage++'>Increase wage by $1</button>
     <button @click='wage--'>Decrease wage by $1</button>
-
 <hr>
     <a :href="url">YouTube</a>
     <div :class='classes'>Classes from Instance</div>           
