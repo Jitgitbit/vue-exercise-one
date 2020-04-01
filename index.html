@@ -24,7 +24,12 @@
   <h1>Vue Basics</h1>
   <div id="app">
     <h2>{{ title }}</h2>
+    <p>My name is {{name}}</p>
+    Key Up<input type="text" @keyup='updateName'>
+    Key Press<input type="text" @keypress='updateName'>
+<hr>
     <p>{{ greet('evening') }}</p>
+<hr>
     <button @click='logEvent'>Log Event Info</button>
     <div class="canvas" @mousemove='logCoords'>x={{coords.x}} y={{coords.y}}</div>
 <hr>
@@ -35,7 +40,8 @@
     <button @click='wage--'>Decrease wage by $1</button>
 <hr>
     <a :href="url">YouTube</a>
-    <div :class='classes'>Classes from Instance</div>           
+    <div :class='classes'>Classes from Instance</div> 
+    InyerFace:          
     <input type="text" :value="name">
   </div>
 

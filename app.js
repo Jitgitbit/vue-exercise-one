@@ -24,6 +24,10 @@ new Vue({
     logCoords(e){
       this.coords.x = e.offsetX
       this.coords.y = e.offsetY
+    },
+    updateName(e){
+      console.log(e.target.value)
+      this.name = e.target.value ? e.target.value : 'Dirk'         // Three names ! hahaa            //notice keypress is always one behind keyup !!
     }
   }
 })
