@@ -10,6 +10,9 @@ new Vue({
   methods: {
     greet(time){
       return `Hello and good ${time} ${this.name}.`   // Unlike with React, not this.data.name !! Vue goes straight to the top !!
+    },
+    changeWage(amount){
+      this.wage += amount
     }
   }
 })
