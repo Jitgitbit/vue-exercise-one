@@ -1,0 +1,1 @@
+SPA stands for: Single Page Application
