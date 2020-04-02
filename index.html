@@ -24,6 +24,16 @@
   <h1>Vue Basics</h1>
   <div id="app">
     <h2>{{ title }}</h2>
+    <ul>
+      <li v-for='item in items'>{{item}}</li>
+    </ul>
+    <div v-for='person in people'>
+      <p>{{person.name}}</p>
+      <p>age: {{person.age}}</p>
+      <p>belt: {{person.belt}}</p>
+      <p>- - - - - -</p>
+    </div>
+<hr>
     <p v-if='showName'>Mario</p>
     <p v-else-if='showAge'>25</p>
     <button @click='toggleName'>Show Name: {{showName}}</button>

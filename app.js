@@ -11,7 +11,13 @@ new Vue({
     coords:{
       x:0,
       y:0
-    }
+    },
+    items:['Mushroom', 'Green Shells', 'Red Shells', 'Banana', 'Star'],
+    people:[
+      { name:'Crystal', age:34, belt:'yellow'},
+      { name:'Joachim', age:41, belt:'blue'},
+      { name:'Thierry', age:39, belt:'black'}
+    ]
   },
   methods: {
     greet(time){
