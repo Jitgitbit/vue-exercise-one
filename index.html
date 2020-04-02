@@ -27,8 +27,8 @@
     <ul>
       <li v-for='item in items'>{{item}}</li>
     </ul>
-    <div v-for='person in people'>
-      <p>{{person.name}}</p>
+    <div v-for='(person, index) in people'>
+      <p>{{index}} - {{person.name}}</p>
       <p>age: {{person.age}}</p>
       <p>belt: {{person.belt}}</p>
       <p>- - - - - -</p>
